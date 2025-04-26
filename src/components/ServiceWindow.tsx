@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Input } from "@/components/ui/input";
 import { Search } from 'lucide-react';
 import ServiceCard from './ServiceCard';
-import { Car, Truck, Wrench, Fuel, Tire } from 'lucide-react';
+import { Car, Truck, Wrench, Fuel, CircleDot } from 'lucide-react';
 
 const ServiceWindow = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -36,7 +36,7 @@ const ServiceWindow = () => {
       title: "Flat Tire Change",
       description: "Quick tire swap with your spare or temporary solution.",
       price: "$44.99",
-      icon: Tire,
+      icon: CircleDot,
       isUrgent: true
     }
   ];
@@ -58,7 +58,7 @@ const ServiceWindow = () => {
       title: "Tire Rotation",
       description: "Extend tire life with professional rotation service.",
       price: "$29.99",
-      icon: Tire
+      icon: CircleDot
     },
     {
       title: "Battery Replacement",
